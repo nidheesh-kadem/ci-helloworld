@@ -34,5 +34,5 @@ jobs:
         with:
           generate-coverage-badge: true
           generate-branches-badge: true
-          fail-if-coverage-less-than-previous: true
-          fail-if-branches-less-than-previous: true
+          fail-on-coverage-decrease: true
+          fail-on-branches-decrease: true

@@ -24,6 +24,11 @@ jar {
         attributes 'Main-Class': 'Main'
     }
 }
+apply plugin: 'jacoco'
+
+jacoco {
+    toolVersion = "0.8.8"
+}
 
 jacocoTestReport {
     dependsOn test
