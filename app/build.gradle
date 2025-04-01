@@ -37,6 +37,10 @@ jacocoTestReport {
         html.required.set(true)
         csv.required.set(true)
     }
+
+    classDirectories.setFrom(fileTree(dir: "$buildDir/classes/java/main", include: '**/*.class'))
+    sourceDirectories.setFrom(files('src/main/java'))
+    executionData.setFrom(fileTree(dir: buildDir, include: '**/*.exec'))
 }
 
 
